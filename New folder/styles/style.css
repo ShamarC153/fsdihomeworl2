@@ -1,0 +1,220 @@
+/*global*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "Roboto, sans-serif";
+  background-color: black;
+}
+/*utilities*/
+.uppercases-spacing {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+p.header-text {
+  color: white;
+}
+.p2 {
+  color: yellow;
+  text-transform: uppercase, bold;
+  text-align: center;
+  font-size: larger;
+}
+.u:hover {
+  text-decoration-color: yellow;
+  background-color: yellow;
+}
+.h2 {
+  color: white;
+  text-align: center;
+}
+/*menu*/
+nav.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  height: 3.5rem;
+  background-color: white;
+}
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 20rem;
+}
+nav.menu a,
+nav.menu i {
+  color: black;
+  font-size: 1.3rem;
+}
+.small-logo {
+  height: 4rem;
+}
+.large-logo {
+  height: 40px;
+  display: none;
+}
+.fa-search,
+.link-renew,
+.link-menu {
+  display: none;
+}
+nav.menu a.link-subscribe {
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+  background-image: linear-gradient(to left, black 50%, rgb(255, 208, 0) 50%);
+  transition: background-position 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+}
+
+nav.menu a.link-subscribe:hover {
+  background-position: 0% 0;
+  color: black;
+}
+/*header*/
+header {
+  background-color: black;
+}
+.yellow-bar {
+  background-color: rgb(255, 208, 0);
+  width: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-top: rgb(255, 208, 0) solid;
+  border-bottom: rgb(255, 208, 0);
+  border-left: rgb(255, 208, 0);
+  border-right: rgb(255, 208, 0);
+}
+.h1 {
+  color: white;
+  text-align: center;
+}
+p.header-text {
+  color: white;
+  text-align: center;
+}
+p.header-text span {
+  border-bottom: 3px solid yellow;
+}
+/*main*/
+.news-container {
+  color: white;
+}
+.picks-container {
+  color: white;
+}
+/*main news*/
+.main-news {
+  position: relative;
+  width: 90%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+.main-news-text {
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+}
+.main-news-text h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: white;
+}
+.main-news-text p.main-text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+p.news-icon {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.main-news:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/*secondary news*/
+.secondary-news {
+  width: 90%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+.secondary-news img {
+  width: 45rem;
+}
+.secondary-news-text {
+  color: black;
+  background-color: white;
+  width: 39.5rem;
+  margin-top: -1.5rem;
+  padding: 2rem;
+}
+.secondary-news-text h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: gray;
+}
+.secondary-news-text h3 span {
+  font-weight: 400;
+}
+.secondary-news-text p.main-text {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.secondary-news:hover img {
+  border-bottom: 5px solid rgb(255, 208, 0);
+}
+/*todays picks*/
+.picks-container {
+  width: 90%;
+  margin: 1rem auto;
+}
+.picks-container h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  border-left: 5px solid rgb(255, 208, 0);
+  padding-left: 2rem;
+  letter-spacing: 3px;
+}
+.single-pick {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.single-pick img {
+  width: 8rem;
+}
+.single-pick-text {
+  flex-basis: 32rem;
+}
+.single-pick-text h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+.single-pick-text p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
